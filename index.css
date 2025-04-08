@@ -1,0 +1,227 @@
+label{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100; /* Regular weight */
+    font-size: 1rem;
+}
+
+body {
+    background: radial-gradient(circle at top, #5d5d5d, #0f0f0f),
+                url('https://www.transparenttextures.com/patterns/noise.png');
+    background-size: cover, 150px; /* Make noise more concentrated */
+    background-blend-mode: multiply; /* Stronger contrast */
+    filter: contrast(2); /* Boost noise visibility */
+    height: 100%;
+    margin: 0;
+}
+
+#mainPage {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Makes it full height of the viewport */
+    flex-direction: column;
+}
+
+#mainPage h1 {
+    font-size: 6rem;
+    margin: -90px;
+    color: #c2bfbf;
+}
+
+h1 {
+    font-size: 5rem;
+    
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #3d3d3d;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: "Delius", cursive;
+    color: #727070;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#arrow {
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 100px;
+    height: 100px;
+    background-image: url('arrow.png'); /* Replace with your SVG logo path */
+    background-size: contain; /* Scale the image to fit within the div */
+    background-position: center; /* Ensure the image is centered */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    filter: grayScale(90%);
+    transition: filter 0.3s ease; /* Smooth transition for color change */
+}
+
+#arrow:hover{
+    filter: grayScale(0%);
+}
+
+
+#linkedin {
+    width: 120px;
+    height: 120px;
+    margin: 3%;
+    margin-left: 130px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png'); /* Replace with your SVG logo path */
+    filter: grayScale(90%) blur(2px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: filter 0.3s ease; /* Smooth transition for color change */
+}
+
+#linkedin:hover {
+    filter: grayScale(0%) blur(0px);
+}
+
+#nameContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#myPage{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+}
+
+#head{
+    border-bottom: 1px solid #a9a9a9;
+    width: 100%;
+    height: 200px;
+}
+
+.title{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#CVWrapper {
+    display: flex;
+    justify-content:space-around; /* Places items at opposite ends */
+    width: 100%; /* Ensures full width */
+}
+
+.CV {
+    display: block; /* Ensures they take up space */
+}
+
+#timelineContainer {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+#CVContainer {
+    width: 85%;
+}
+
+#timeline{
+    background-color: gray ;
+    width: 4px;
+    height: 100%;
+}
+
+#expContainer{
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.expTitle{
+    font-size: 3rem;
+}
+
+.expDescr{
+    font-size: 1.3rem;
+    font-family: "Funnel Display", sans-serif;
+}
+
+.expList{
+    font-size: 1.5rem;
+    padding-left: 15%;
+    font-family: "Funnel Display", sans-serif;
+}
+
+.timelineMarker{
+    height: 3px;
+    width: 30px;
+    background-color: black;
+    margin-left: -9%;
+    padding-left: 1%;
+}
+
+#projWrapper{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.projContainer{
+    width: 49.5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid rgb(178, 178, 178);
+}
+
+.projName{
+    font-size: 2.5rem;
+    flex-wrap: wrap;
+    display: block;
+}
+
+.video-container {
+    width: 95%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Or whatever ratio you prefer */
+    position: relative;
+    margin: 2.5%;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* or "contain", depending on how you want it to fit */
+    display: block;
+}
+
+.projDescrContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.projDescr {
+    color: rgb(56, 56, 56); /* Or use a specific shade like #777 */
+    font-size: 1.5rem; /* Adjust as needed */
+    max-width: 800px; /* Optional: limit width for readability */
+    width: 80%;
+    font-family: "Funnel Display", sans-serif;
+}
+
+.moreButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid grey;
+    width: 20%;
+    aspect-ratio: 3/1;
+    margin: 10%;
+}
+
+#footer{
+    height: 150px;
+}
