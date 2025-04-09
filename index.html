@@ -18,13 +18,14 @@
         <h1>Personal Portfolio</h1>
         <br><br>
         <h2 id="introText">A showcase of my Experience and projects</h2>
-        <div id="arrow"></div>
+        <a href="#head" id="arrow"></a>
     </div>
     <div id="myPage">
         <div id="head">
-
+            <a href="#CVTitle" class="navButton">My Work Experience</a>
+            <a href="#projTitle" class="navButton">My Projects</a>
         </div>
-        <div class="title">
+        <div class="title" id="CVTitle">
             <h1>My Work Experience</h1>
             <h2>Having worked with various teams helped me understand it better.</h2>
         </div>
@@ -145,7 +146,7 @@ progress
 
             </div>
         </div>
-        <div class="title">
+        <div class="title" id="projTitle">
             <h1>My Projects</h1>
             <h2>Discovering the limits of my capabilities.</h2>
         </div>
@@ -169,12 +170,9 @@ progress
 
             <div class="projContainer">
                 <label class="projName">MoveTheSquare</label>
-                    <div class="video-container">
-                        <video controls>
-                            <source src="" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>               
+                    <div class="image-container">
+                        <img src="MoveTheSquare.png" alt="MoveTheSquare Game Screenshot">
+                    </div>
                 <div class="projDescrContainer">
                     <label class="projDescr">
                         Our First Game within OrthrusGames
