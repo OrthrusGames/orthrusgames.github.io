@@ -16,16 +16,32 @@ body {
 
 #mainPage {
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    height: 100vh; /* Makes it full height of the viewport */
     flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Add padding to prevent overlap */
+    box-sizing: border-box; /* Include padding in height/width calculations */
 }
 
 #mainPage h1 {
-    font-size: 6rem;
-    margin: -90px;
+    font-size: clamp(3rem, 6vw, 6rem); /* Responsive font size */
+    margin: 0; /* Remove extra margins */
     color: #c2bfbf;
+}
+
+#mainPage h2 {
+    font-size: clamp(1rem, 2.5vw, 1.5rem); /* Responsive font size */
+    color: #ffffff; /* Light color for visibility */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow for contrast */
+    margin: 10px 0; /* Add spacing between elements */
+}
+
+#mainPage h1:nth-of-type(2) {
+    font-size: clamp(2rem, 4vw, 4rem); /* Smaller size for "Personal Portfolio" */
+    color: #a2a2a2; /* Slightly lighter color */
+    margin-top: 10px;
 }
 
 h1 {
@@ -42,6 +58,7 @@ h2 {
     color: #727070;
     margin-left: 30%;
     margin-right: 30%;
+    text-align: center; /* Align text to the center */
 }
 
 #arrow {
@@ -216,12 +233,200 @@ h2 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 2px solid grey;
+    border: 2px solid rgb(0, 0, 0); /* Light blue border for active buttons */
+    color: rgb(0, 0, 0); /* Light blue text */
+    width: 20%;
+    aspect-ratio: 3/1; /* Maintain button aspect ratio */
+    margin: 10%;
+    text-decoration: none; /* Remove underline */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.moreButton:hover {
+    background-color: rgb(101, 101, 101); /* Black background on hover */
+    color: white; /* White text on hover */
+}
+
+/* Style for "More" button with a link */
+.moreButton a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid lightblue; /* Light blue border for active buttons */
+    color: lightblue; /* Light blue text */
     width: 20%;
     aspect-ratio: 3/1;
     margin: 10%;
+    text-decoration: none; /* Remove underline */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.moreButton a:hover {
+    background-color: lightblue; /* Light blue background on hover */
+    color: white; /* White text on hover */
+}
+
+/* Style for "More" button without a link */
+.moreButton.disabled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid grey; /* Grey border for disabled buttons */
+    color: grey; /* Grey text */
+    width: 20%;
+    aspect-ratio: 3/1;
+    margin: 10%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    cursor: not-allowed; /* Show "not allowed" cursor */
+    opacity: 0.6; /* Make it slightly transparent */
 }
 
 #footer{
     height: 150px;
+}
+
+#introText {
+    color: #a2a2a2; /* White color for better visibility */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow for contrast */
+    text-align: center; /* Ensure the text is centered */
+}
+
+@media (max-width: 1200px) {
+    #mainPage h1 {
+        font-size: 4rem; /* Reduce font size for smaller screens */
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        margin-left: 10%; /* Reduce margins for smaller screens */
+        margin-right: 10%;
+    }
+
+    #linkedin {
+        width: 80px; /* Reduce size of LinkedIn icon */
+        height: 80px;
+        margin-left: 50px;
+    }
+
+    #arrow {
+        width: 80px; /* Reduce size of arrow */
+        height: 80px;
+    }
+
+    #CVWrapper {
+        flex-direction: column; /* Stack CV sections vertically */
+        align-items: center;
+    }
+
+    #timelineContainer, #CVContainer {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .projContainer {
+        width: 100%; /* Make project containers full width */
+        margin-bottom: 20px; /* Add spacing between projects */
+    }
+
+    .moreButton {
+        width: 50%; /* Adjust button size */
+    }
+}
+
+@media (max-width: 768px) {
+    #mainPage h1 {
+        font-size: 4rem; /* Reduce font size for smaller screens */
+    }
+
+    #mainPage h2 {
+        font-size: 1.2rem; /* Reduce font size for smaller screens */
+    }
+
+    #mainPage {
+        padding: 10px; /* Add more padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #linkedin {
+        width: 60px; /* Further reduce LinkedIn icon size */
+        height: 60px;
+        margin-left: 20px;
+    }
+
+    #arrow {
+        width: 60px; /* Further reduce arrow size */
+        height: 60px;
+    }
+
+    #CVWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #timelineContainer, #CVContainer {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .projContainer {
+        width: 100%; /* Full width for projects */
+    }
+
+    .projDescr {
+        font-size: 1.2rem; /* Adjust font size for readability */
+    }
+
+    .moreButton {
+        width: 70%; /* Adjust button size */
+    }
+}
+
+@media (max-width: 480px) {
+    #mainPage h1 {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    #linkedin {
+        width: 50px;
+        height: 50px;
+    }
+
+    #arrow {
+        width: 50px;
+        height: 50px;
+    }
+
+    .projDescr {
+        font-size: 1rem;
+    }
+
+    .moreButton {
+        width: 90%; /* Full width for buttons */
+    }
 }
