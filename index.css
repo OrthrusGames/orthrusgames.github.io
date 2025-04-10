@@ -219,6 +219,11 @@ h2 {
     display: block;
 }
 
+.image-container img,
+.video-container video {
+    filter: contrast(0.5) brightness(1); /* Normalize contrast and brightness */
+}
+
 .projDescrContainer {
     display: flex;
     justify-content: center;
