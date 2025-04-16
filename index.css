@@ -160,19 +160,32 @@ h2 {
     margin-bottom: 10%;
 }
 
-.expTitle{
-    font-size: 3rem;
+/* CV Title */
+.expTitle {
+    font-size: clamp(2rem, 4vw, 3rem); /* Dynamic font size */
+    text-align: center; /* Center-align text */
+    margin-bottom: 20px; /* Add spacing below the title */
+    font-family: 'Poppins', sans-serif;
+    color: #333; /* Darker text for better contrast */
 }
 
-.expDescr{
-    font-size: 1.3rem;
+/* CV Description */
+.expDescr {
+    font-size: clamp(1rem, 2.5vw, 1.5rem); /* Dynamic font size */
+    text-align: justify; /* Justify text for better readability */
+    line-height: 1.6; /* Improve line spacing */
+    margin: 10px 0; /* Add spacing above and below */
     font-family: "Funnel Display", sans-serif;
+    color: #555; /* Slightly lighter text color */
 }
 
-.expList{
-    font-size: 1.5rem;
-    padding-left: 15%;
+/* CV List Items */
+.expList {
+    font-size: clamp(1rem, 2.5vw, 1.3rem); /* Dynamic font size */
+    padding-left: 15%; /* Indent list items */
+    line-height: 1.5; /* Improve line spacing */
     font-family: "Funnel Display", sans-serif;
+    color: #444; /* Darker text for better contrast */
 }
 
 .timelineMarker{
@@ -187,149 +200,87 @@ h2 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 10px; /* Add padding around the project wrapper */
 }
 
-.projContainer{
-    width: 49.5%;
+/* General styles for project containers */
+.projContainer {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    border: 2px solid rgb(178, 178, 178);
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align content */
+    margin: 20px 0; /* Add spacing between projects */
+    padding: 10px; /* Add padding inside the container */
+    border: 1px solid #ccc; /* Optional: Add a border for better separation */
+    border-radius: 8px; /* Optional: Rounded corners */
+    background-color: #f9f9f9; /* Optional: Light background for better contrast */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    width: 49.5%;
 }
 
-.projName{
-    font-size: 2.5rem;
-    flex-wrap: wrap;
-    display: block;
-}
-
-.video-container {
-    width: 95%;
-    height: auto;
-    aspect-ratio: 16 / 9; /* Or whatever ratio you prefer */
-    position: relative;
-    margin: 2.5%;
-}
-
-.video-container video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* or "contain", depending on how you want it to fit */
-    display: block;
-}
-
+/* Media container for images and videos */
 .image-container img,
 .video-container video {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners */
+    object-fit: cover; /* Ensure content fits nicely */
     filter: contrast(0.5) brightness(1); /* Normalize contrast and brightness */
 }
 
+/* Project description container */
 .projDescrContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 10px; /* Add spacing above the description */
 }
 
 .projDescr {
-    color: rgb(56, 56, 56); /* Or use a specific shade like #777 */
-    font-size: 1.5rem; /* Adjust as needed */
+    color: #333; /* Darker text for better contrast */
+    font-size: 1rem; /* Adjust font size for readability */
     max-width: 800px; /* Optional: limit width for readability */
     width: 80%;
     font-family: "Funnel Display", sans-serif;
 }
 
-.moreButton{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: 2px solid rgb(0, 0, 0); /* Light blue border for active buttons */
-    color: rgb(0, 0, 0); /* Light blue text */
-    width: 20%;
-    aspect-ratio: 3/1; /* Maintain button aspect ratio */
-    margin: 10%;
-    text-decoration: none; /* Remove underline */
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.moreButton:hover {
-    background-color: rgb(101, 101, 101); /* Black background on hover */
-    color: white; /* White text on hover */
-}
-
-/* Style for "More" button with a link */
-.moreButton a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: 2px solid lightblue; /* Light blue border for active buttons */
-    color: lightblue; /* Light blue text */
-    width: 20%;
-    aspect-ratio: 3/1;
-    margin: 10%;
-    text-decoration: none; /* Remove underline */
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.moreButton a:hover {
-    background-color: lightblue; /* Light blue background on hover */
-    color: white; /* White text on hover */
-}
-
-/* Style for "More" button without a link */
-.moreButton.disabled {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: 2px solid grey; /* Grey border for disabled buttons */
-    color: grey; /* Grey text */
-    width: 20%;
-    aspect-ratio: 3/1;
-    margin: 10%;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
-    cursor: not-allowed; /* Show "not allowed" cursor */
-    opacity: 0.6; /* Make it slightly transparent */
-}
-
-/* Style for navButtons */
+/* General button styles */
+.moreButton,
 .navButton {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 2px solid rgb(0, 0, 0); /* Black border for buttons */
+    border: 2px solid rgb(0, 0, 0); /* Black border */
     color: rgb(0, 0, 0); /* Black text */
-    width: 20%; /* Responsive width */
-    aspect-ratio: 3/1; /* Maintain button aspect ratio */
-    margin: 10px; /* Add spacing between buttons */
-    padding: 10px; /* Add padding inside the buttons */
+    width: 150px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    padding: 10px; /* Add padding */
     text-decoration: none; /* Remove underline */
     font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px; /* Optional: Rounded corners */
+    background-color: #f9f9f9; /* Optional: Light background */
 }
 
+/* Hover effect */
+.moreButton:hover,
 .navButton:hover {
     background-color: rgb(101, 101, 101); /* Dark background on hover */
     color: white; /* White text on hover */
 }
 
-#footer{
-    height: 150px;
+/* General styles for navButtons */
+.navButton {
+    margin: 5px; /* Add spacing between buttons */
 }
 
-#introText {
-    color: #a2a2a2; /* White color for better visibility */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow for contrast */
-    text-align: center; /* Ensure the text is centered */
+.durationMobile{
+    display: none; /* Hide duration on mobile */
 }
 
+/* Responsive adjustments for smaller screens */
 @media (max-width: 1200px) {
     #mainPage h1 {
         font-size: 4rem; /* Reduce font size for smaller screens */
@@ -367,11 +318,44 @@ h2 {
 
     .projContainer {
         width: 100%; /* Make project containers full width */
-        margin-bottom: 20px; /* Add spacing between projects */
+        margin: 10px 0; /* Reduce spacing between projects */
+    }
+
+    .projName {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+        text-align: center; /* Center-align project names */
+        margin-bottom: 10px; /* Add spacing below the name */
+    }
+
+    .projDescr {
+        font-size: 0.9rem; /* Slightly smaller font size for descriptions */
     }
 
     .moreButton {
-        width: 50%; /* Adjust button size */
+        width: 100%; /* Full width for buttons */
+        margin: 10px 0; /* Add spacing above and below buttons */
+        padding: 12px; /* Increase padding for better touch targets */
+    }
+
+    .navButton {
+        width: 100px; /* Reduce width for smaller screens */
+        height: 40px; /* Reduce height for smaller screens */
+        font-size: 1rem; /* Adjust font size */
+        padding: 8px; /* Adjust padding */
+    }
+
+    .expTitle {
+        font-size: clamp(1.8rem, 4vw, 2.5rem); /* Slightly smaller font size */
+    }
+
+    .expDescr {
+        font-size: clamp(0.9rem, 2vw, 1.2rem); /* Adjust font size for smaller screens */
+        margin: 8px 0; /* Reduce spacing */
+    }
+
+    .expList {
+        font-size: clamp(0.9rem, 2vw, 1.1rem); /* Adjust font size for smaller screens */
+        padding-left: 10%; /* Reduce indentation */
     }
 }
 
@@ -409,6 +393,14 @@ h2 {
         height: 60px;
     }
 
+    #head  a{
+        width: 80%;
+    }
+
+    #nameContainer{
+        flex-direction: column; /* Stack name and icon vertically */
+        align-items: center; /* Center-align items */
+    }
     #CVWrapper {
         flex-direction: column;
         align-items: center;
@@ -422,12 +414,44 @@ h2 {
         width: 100%; /* Full width for projects */
     }
 
+    .durationMobile{
+        display: block; /* Show duration on mobile */
+        font-size: 0.8rem; /* Adjust font size for mobile */
+        margin-top: 5px; /* Add spacing above duration */
+    }
+
+    .timelineMarker{
+        display: none;
+    }
     .projDescr {
-        font-size: 1.2rem; /* Adjust font size for readability */
+        font-size: 0.9rem; /* Slightly smaller font size for descriptions */
     }
 
     .moreButton {
-        width: 70%; /* Adjust button size */
+        width: 100%; /* Full width for buttons */
+        margin: 10px 0; /* Add spacing above and below buttons */
+        padding: 12px; /* Increase padding for better touch targets */
+    }
+
+    .navButton {
+        width: 100px; /* Reduce width for smaller screens */
+        height: 40px; /* Reduce height for smaller screens */
+        font-size: 1rem; /* Adjust font size */
+        padding: 8px; /* Adjust padding */
+    }
+
+    .expTitle {
+        font-size: clamp(1.8rem, 4vw, 2.5rem); /* Slightly smaller font size */
+    }
+
+    .expDescr {
+        font-size: clamp(0.9rem, 2vw, 1.2rem); /* Adjust font size for smaller screens */
+        margin: 8px 0; /* Reduce spacing */
+    }
+
+    .expList {
+        font-size: clamp(0.9rem, 2vw, 1.1rem); /* Adjust font size for smaller screens */
+        padding-left: 10%; /* Reduce indentation */
     }
 }
 
@@ -454,11 +478,46 @@ h2 {
         height: 50px;
     }
 
+    .projName {
+        font-size: 1rem; /* Further reduce font size for very small screens */
+    }
+
     .projDescr {
-        font-size: 1rem;
+        font-size: 0.8rem; /* Further reduce font size for descriptions */
     }
 
     .moreButton {
+        font-size: 1rem; /* Adjust button text size */
+        padding: 10px; /* Adjust padding for smaller buttons */
         width: 90%; /* Full width for buttons */
     }
+
+    .navButton {
+        font-size: 1rem; /* Adjust button text size */
+        padding: 10px; /* Adjust padding for smaller buttons */
+        width: 90%; /* Full width for buttons */
+    }
+
+    .expTitle {
+        font-size: clamp(1.5rem, 3.5vw, 2rem); /* Further reduce font size */
+    }
+
+    .expDescr {
+        font-size: clamp(0.8rem, 1.8vw, 1rem); /* Further reduce font size */
+    }
+
+    .expList {
+        font-size: clamp(0.8rem, 1.8vw, 1rem); /* Further reduce font size */
+        padding-left: 5%; /* Reduce indentation further */
+    }
+}
+
+#footer{
+    height: 150px;
+}
+
+#introText {
+    color: #a2a2a2; /* White color for better visibility */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow for contrast */
+    text-align: center; /* Ensure the text is centered */
 }
