@@ -196,10 +196,11 @@ h2 {
     padding-left: 1%;
 }
 
-#projWrapper{
+#projWrapper {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: space-between; /* Add space between items */
+    gap: 20px; /* Add spacing between rows and columns */
     padding: 10px; /* Add padding around the project wrapper */
 }
 
@@ -214,7 +215,10 @@ h2 {
     border-radius: 8px; /* Optional: Rounded corners */
     background-color: #f9f9f9; /* Optional: Light background for better contrast */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-    width: 49.5%;
+    flex: 1 1 calc(48% - 10px); /* Take up 48% of the row with some spacing */
+    max-width: calc(48% - 10px); /* Ensure max width is consistent */
+    box-sizing: border-box; /* Include padding and border in width */
+    margin: 0;
 }
 
 /* Media container for images and videos */
@@ -411,7 +415,8 @@ h2 {
     }
 
     .projContainer {
-        width: 100%; /* Full width for projects */
+        flex: 1 1 100%; /* Take up full width on mobile */
+        max-width: 100%; /* Ensure max width is 100% */
     }
 
     .durationMobile{
@@ -452,6 +457,11 @@ h2 {
     .expList {
         font-size: clamp(0.9rem, 2vw, 1.1rem); /* Adjust font size for smaller screens */
         padding-left: 10%; /* Reduce indentation */
+    }
+
+    #myPage {
+        width: 95%; /* Set width to 95% on mobile */
+        padding: 0 10px; /* Add 10px padding on left and right */
     }
 }
 
