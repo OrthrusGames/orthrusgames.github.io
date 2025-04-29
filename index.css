@@ -275,6 +275,10 @@ h2 {
     color: white; /* White text on hover */
 }
 
+.moreButton{
+    margin-top: 20px; /* Add spacing above the button */
+}
+
 /* General styles for navButtons */
 .navButton {
     margin: 5px; /* Add spacing between buttons */
@@ -432,11 +436,6 @@ h2 {
         font-size: 0.9rem; /* Slightly smaller font size for descriptions */
     }
 
-    .moreButton {
-        width: 100%; /* Full width for buttons */
-        margin: 10px 0; /* Add spacing above and below buttons */
-        padding: 12px; /* Increase padding for better touch targets */
-    }
 
     .navButton {
         width: 100px; /* Reduce width for smaller screens */
