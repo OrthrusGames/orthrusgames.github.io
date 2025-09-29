@@ -736,6 +736,114 @@ body {
     border: 1px solid #f5c6cb;
 }
 
+/* Project Tech Tags */
+.project-tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-tech-tag {
+    background: #764ba2;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Professional Experience Section */
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.experience-item {
+    position: relative;
+}
+
+.experience-content {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid #667eea;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.experience-header {
+    margin-bottom: 1rem;
+}
+
+.experience-header h3 {
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+}
+
+.company-name {
+    color: #667eea;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+}
+
+.location-date {
+    color: #999;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.experience-date {
+    color: #667eea;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.experience-description p {
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.achievements {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.achievements li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #666;
+    line-height: 1.5;
+}
+
+.achievements li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.tech-tag {
+    background: #667eea;
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
 @keyframes pulse {
     0% { opacity: 1; }
     50% { opacity: 0.7; }
