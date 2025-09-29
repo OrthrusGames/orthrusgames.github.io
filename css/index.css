@@ -1,3 +1,74 @@
+/* Color Variables */
+:root {
+    /* Primary Colors */
+    --primary-color: #667eea;
+    --secondary-color: #764ba2;
+    --border-color: #667eea;
+    
+    /* Background Colors */
+    --hero-gradient-start: #667eea;
+    --hero-gradient-end: #764ba2;
+    --main-bg-start: #f8f9fa;
+    --main-bg-end: #e9ecef;
+    --section-bg: #ffffff;
+    --card-bg: #f8f9fa;
+    --contribution-bg: #ffffff;
+    
+    /* Text Colors */
+    --text-primary: #333;
+    --text-secondary: #555;
+    --text-muted: #666;
+    --text-light: #999;
+    --text-white: #ffffff;
+    
+    /* Border Colors */
+    --border-light: rgba(0, 0, 0, 0.05);
+    --border-primary: rgba(102, 126, 234, 0.2);
+    --border-primary-light: rgba(102, 126, 234, 0.1);
+    --border-primary-medium: rgba(102, 126, 234, 0.3);
+    --border-form: #e9ecef;
+    
+    /* Status Colors */
+    --success-color: #28a745;
+    --info-color: #17a2b8;
+    --warning-color: #ffc107;
+    --warning-text: #333;
+    --error-color: #721c24;
+    --error-bg: #f8d7da;
+    --error-border: #f5c6cb;
+    --success-bg: #d4edda;
+    --success-text: #155724;
+    --success-border: #c3e6cb;
+    
+    /* Store Button Colors */
+    --playstore-color: #01875f;
+    --playstore-hover: #006844;
+    --appstore-color: #007aff;
+    --appstore-hover: #0056cc;
+    --disabled-bg: #e9ecef;
+    --disabled-text: #6c757d;
+    
+    /* Language Level Colors */
+    --native-level: #28a745;
+    --fluent-level: #17a2b8;
+    --intermediate-level: #ffc107;
+    --learning-level: #764ba2;
+    
+    /* Shadow Colors */
+    --shadow-light: rgba(0, 0, 0, 0.08);
+    --shadow-medium: rgba(0, 0, 0, 0.1);
+    --shadow-dark: rgba(0, 0, 0, 0.12);
+    --shadow-hero: rgba(0, 0, 0, 0.2);
+    --shadow-nav: rgba(0, 0, 0, 0.1);
+    --shadow-text: rgba(0, 0, 0, 0.3);
+    
+    /* Overlay Colors */
+    --overlay-light: rgba(255, 255, 255, 0.2);
+    --overlay-medium: rgba(255, 255, 255, 0.3);
+    --overlay-border: rgba(255, 255, 255, 0.3);
+    --nav-overlay: rgba(255, 255, 255, 0.95);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +78,8 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: var(--text-primary);
+    background: linear-gradient(135deg, var(--hero-gradient-start) 0%, var(--hero-gradient-end) 100%);
     min-height: 100vh;
 }
 
@@ -29,8 +100,8 @@ body {
 .hero-title {
     font-size: 4rem;
     font-weight: bold;
-    color: white;
-    text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+    color: var(--text-white);
+    text-shadow: 3px 3px 6px var(--shadow-text);
     margin-bottom: 2rem;
     animation: fadeInUp 1s ease-out;
 }
@@ -64,28 +135,28 @@ body {
 }
 
 .hero-btn.primary {
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    border-color: rgba(255, 255, 255, 0.3);
+    background: var(--overlay-light);
+    color: var(--text-white);
+    border-color: var(--overlay-border);
 }
 
 .hero-btn.primary:hover {
-    background: rgba(255, 255, 255, 0.3);
+    background: var(--overlay-medium);
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 25px var(--shadow-hero);
 }
 
 .hero-btn.secondary {
     background: transparent;
-    color: white;
-    border-color: white;
+    color: var(--text-white);
+    border-color: var(--text-white);
 }
 
 .hero-btn.secondary:hover {
-    background: white;
-    color: #667eea;
+    background: var(--text-white);
+    color: var(--primary-color);
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 25px var(--shadow-hero);
 }
 
 @keyframes fadeInUp {
@@ -101,7 +172,7 @@ body {
 
 /* Main Content Container */
 .main-content {
-    background: linear-gradient(to bottom, #f8f9fa 0%, #e9ecef 100%);
+    background: linear-gradient(to bottom, var(--main-bg-start) 0%, var(--main-bg-end) 100%);
     min-height: 100vh;
     padding-top: 2rem;
 }
@@ -120,9 +191,9 @@ body {
 }
 
 .top-nav.scrolled {
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--nav-overlay);
     backdrop-filter: blur(10px);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px var(--shadow-nav);
 }
 
 .nav-container {
@@ -137,12 +208,12 @@ body {
 .nav-brand {
     font-size: 1.5rem;
     font-weight: bold;
-    color: white;
+    color: var(--text-white);
     transition: color 0.3s ease;
 }
 
 .top-nav.scrolled .nav-brand {
-    color: #667eea;
+    color: var(--primary-color);
 }
 
 .nav-links {
@@ -151,7 +222,7 @@ body {
 }
 
 .nav-link {
-    color: white;
+    color: var(--text-white);
     text-decoration: none;
     font-weight: 500;
     padding: 0.5rem 1rem;
@@ -160,16 +231,16 @@ body {
 }
 
 .top-nav.scrolled .nav-link {
-    color: #333;
+    color: var(--text-primary);
 }
 
 .nav-link:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--overlay-light);
 }
 
 .top-nav.scrolled .nav-link:hover {
-    background: rgba(102, 126, 234, 0.1);
-    color: #667eea;
+    background: var(--border-primary-light);
+    color: var(--primary-color);
 }
 
 .container {
@@ -179,30 +250,30 @@ body {
 }
 
 .section {
-    background: white;
+    background: var(--section-bg);
     border-radius: 15px;
     padding: 3rem;
     margin-bottom: 2rem;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 32px var(--shadow-light);
 }
 
 /* About Section Grid */
 .about-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto auto; /* Added third row */
+    grid-template-rows: auto auto auto;
     gap: 2.5rem;
     grid-template-areas: 
         "profile technical"
         "profile languages"
-        "education languages"; /* Languages takes full width on bottom */
+        "education languages";
 }
 
 .about-card {
-    background: #f8f9fa;
+    background: var(--card-bg);
     padding: 2rem;
     border-radius: 12px;
-    border-left: 4px solid #667eea;
+    border: 1px solid var(--border-color);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
@@ -212,12 +283,12 @@ body {
 
 .technical-card {
     grid-area: technical;
-    align-self: start; /* Prevents stretching to match profile height */
+    align-self: start;
 }
 
 .education-card {
     grid-area: education;
-    align-self: start; /* Prevents stretching */
+    align-self: start;
 }
 
 .languages-card {
@@ -225,7 +296,7 @@ body {
 }
 
 .about-card h3 {
-    color: #667eea;
+    color: var(--primary-color);
     font-size: 1.3rem;
     margin-bottom: 1rem;
     font-weight: 600;
@@ -257,11 +328,11 @@ body {
 .about-card p {
     margin-bottom: 1rem;
     line-height: 1.6;
-    color: #555;
+    color: var(--text-secondary);
 }
 
 .about-card h4 {
-    color: #333;
+    color: var(--text-primary);
     font-size: 1rem;
     margin: 1rem 0 0.5rem 0;
     font-weight: 600;
@@ -276,12 +347,12 @@ body {
     margin-bottom: 0.5rem;
     padding-left: 1rem;
     position: relative;
-    color: #666;
+    color: var(--text-muted);
 }
 
 .about-card li:before {
-    content: "•";
-    color: #667eea;
+    content: "●";
+    color: var(--border-color);
     font-weight: bold;
     position: absolute;
     left: 0;
@@ -290,21 +361,21 @@ body {
 .skills-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.4rem; /* Reduced from 0.5rem */
-    margin-top: 0.8rem; /* Reduced from 1rem */
+    gap: 0.4rem;
+    margin-top: 0.8rem;
 }
 
 .skill-tag {
-    background: #667eea;
-    color: white;
-    padding: 0.25rem 0.7rem; /* Reduced padding */
+    background: var(--primary-color);
+    color: var(--text-white);
+    padding: 0.25rem 0.7rem;
     border-radius: 20px;
-    font-size: 0.8rem; /* Reduced from 0.85rem */
+    font-size: 0.8rem;
     font-weight: 500;
 }
 
 .skill-tag.learning {
-    background: #764ba2;
+    background: var(--secondary-color);
     animation: pulse 2s infinite;
 }
 
@@ -313,20 +384,20 @@ body {
 }
 
 .education-details h4 {
-    color: #333;
+    color: var(--text-primary);
     margin-bottom: 0.3rem;
     font-size: 1.1rem;
 }
 
 .education-details .university {
     font-style: italic;
-    color: #667eea;
+    color: var(--primary-color);
     margin-bottom: 0.3rem;
     font-weight: 500;
 }
 
 .education-details .location-date {
-    color: #999;
+    color: var(--text-light);
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
 }
@@ -334,7 +405,7 @@ body {
 .languages-list {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem; /* Reduced from 0.8rem */
+    gap: 0.5rem;
     margin-top: 1rem;
 }
 
@@ -342,12 +413,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.3rem 0; /* Reduced from 0.5rem */
+    padding: 0.3rem 0;
 }
 
 .language-name {
     font-weight: 500;
-    color: #333;
+    color: var(--text-primary);
 }
 
 .language-level {
@@ -358,23 +429,23 @@ body {
 }
 
 .language-level.native {
-    background: #28a745;
-    color: white;
+    background: var(--native-level);
+    color: var(--text-white);
 }
 
 .language-level.fluent {
-    background: #17a2b8;
-    color: white;
+    background: var(--fluent-level);
+    color: var(--text-white);
 }
 
 .language-level.intermediate {
-    background: #ffc107;
-    color: #333;
+    background: var(--intermediate-level);
+    color: var(--warning-text);
 }
 
 .language-level.learning {
-    background: #764ba2;
-    color: white;
+    background: var(--learning-level);
+    color: var(--text-white);
     animation: pulse 2s infinite;
 }
 
@@ -385,14 +456,14 @@ body {
 }
 
 .section-content h2 {
-    color: #667eea;
+    color: var(--primary-color);
     margin-bottom: 2rem;
     font-size: 2rem;
     text-align: center;
 }
 
 .section-content h3 {
-    color: #764ba2;
+    color: var(--secondary-color);
     margin: 1.5rem 0 1rem 0;
 }
 
@@ -407,8 +478,8 @@ body {
 }
 
 .section-content li:before {
-    content: "▶";
-    color: #667eea;
+    content: "●";
+    color: var(--border-color);
     position: absolute;
     left: -1rem;
 }
@@ -421,30 +492,30 @@ body {
 }
 
 .project-card {
-    background: #f8f9fa;
+    background: var(--card-bg);
     border-radius: 10px;
     padding: 1.5rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 15px var(--shadow-light);
     transition: transform 0.3s ease;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
     display: flex;
     flex-direction: column;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 25px var(--shadow-dark);
 }
 
 .project-card h3 {
-    color: #333;
+    color: var(--text-primary);
     font-size: 1.3rem;
     margin-bottom: 1rem;
     font-weight: 600;
 }
 
 .project-description {
-    color: #666;
+    color: var(--text-muted);
     line-height: 1.5;
     margin-bottom: 1.5rem;
     font-size: 0.95rem;
@@ -467,21 +538,21 @@ body {
 .project-contribution {
     margin-bottom: 1.5rem;
     flex-grow: 1;
-    background: #ffffff;
+    background: var(--contribution-bg);
     padding: 1rem;
     border-radius: 8px;
-    border: 1px solid rgba(102, 126, 234, 0.2);
+    border: 1px solid var(--border-color);
 }
 
 .project-contribution h4 {
-    color: #667eea;
+    color: var(--primary-color);
     font-size: 1rem;
     margin-bottom: 0.5rem;
     font-weight: 600;
 }
 
 .project-contribution p {
-    color: #555;
+    color: var(--text-secondary);
     line-height: 1.5;
     font-size: 0.9rem;
 }
@@ -509,42 +580,42 @@ body {
 }
 
 .store-btn.playstore {
-    background: #01875f;
-    color: white;
+    background: var(--playstore-color);
+    color: var(--text-white);
 }
 
 .store-btn.playstore:hover {
-    background: #006844;
+    background: var(--playstore-hover);
     transform: translateY(-2px);
 }
 
 .store-btn.appstore {
-    background: #007aff;
-    color: white;
+    background: var(--appstore-color);
+    color: var(--text-white);
 }
 
 .store-btn.appstore:hover {
-    background: #0056cc;
+    background: var(--appstore-hover);
     transform: translateY(-2px);
 }
 
 .store-btn.disabled {
-    background: #e9ecef;
-    color: #6c757d;
+    background: var(--disabled-bg);
+    color: var(--disabled-text);
     cursor: not-allowed;
 }
 
 .store-btn.disabled:hover {
     transform: none;
-    background: #e9ecef;
+    background: var(--disabled-bg);
 }
 
 .store-btn img {
-    filter: brightness(0) invert(1);
+    /* Keep original colors for enabled buttons */
 }
 
 .store-btn.disabled img {
-    filter: brightness(0) invert(0.5);
+    filter: grayscale(100%) brightness(1.2);
 }
 
 .contact-info {
@@ -562,13 +633,13 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: #667eea;
+    color: var(--primary-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .social-link:hover {
-    color: #764ba2;
+    color: var(--secondary-color);
 }
 
 /* Contact Section Styles */
@@ -581,7 +652,7 @@ body {
 
 .contact-form-section h3,
 .contact-info-section h3 {
-    color: #667eea;
+    color: var(--primary-color);
     margin-bottom: 1.5rem;
     font-size: 1.3rem;
 }
@@ -601,7 +672,7 @@ body {
 .form-group input,
 .form-group textarea {
     padding: 0.8rem;
-    border: 2px solid #e9ecef;
+    border: 2px solid var(--border-form);
     border-radius: 8px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
@@ -611,7 +682,7 @@ body {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: var(--primary-color);
 }
 
 .form-group textarea {
@@ -621,8 +692,8 @@ body {
 
 .send-btn {
     padding: 12px 30px;
-    background: #667eea;
-    color: white;
+    background: var(--primary-color);
+    color: var(--text-white);
     border: none;
     border-radius: 25px;
     font-size: 1rem;
@@ -633,7 +704,7 @@ body {
 }
 
 .send-btn:hover {
-    background: #764ba2;
+    background: var(--secondary-color);
     transform: translateY(-2px);
 }
 
@@ -654,24 +725,24 @@ body {
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-    background: #f8f9fa;
+    background: var(--card-bg);
     border-radius: 12px;
     text-decoration: none;
     transition: all 0.3s ease;
-    border: 1px solid rgba(102, 126, 234, 0.1);
+    border: 1px solid var(--border-primary-light);
 }
 
 .contact-link:hover {
-    background: #ffffff;
-    border-color: rgba(102, 126, 234, 0.3);
+    background: var(--section-bg);
+    border-color: var(--border-primary-medium);
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px var(--shadow-medium);
 }
 
 .contact-icon {
     font-size: 1.5rem;
-    background: #667eea;
-    color: white;
+    background: var(--primary-color);
+    color: var(--text-white);
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -688,12 +759,12 @@ body {
 
 .contact-label {
     font-weight: 600;
-    color: #333;
+    color: var(--text-primary);
     font-size: 1rem;
 }
 
 .contact-value {
-    color: #666;
+    color: var(--text-muted);
     font-size: 0.9rem;
 }
 
@@ -704,8 +775,8 @@ body {
 .download-cv {
     display: inline-block;
     padding: 15px 30px;
-    background: #667eea;
-    color: white;
+    background: var(--primary-color);
+    color: var(--text-white);
     text-decoration: none;
     border-radius: 25px;
     transition: background 0.3s ease;
@@ -713,7 +784,7 @@ body {
 }
 
 .download-cv:hover {
-    background: #764ba2;
+    background: var(--secondary-color);
 }
 
 /* Form Message Styles */
@@ -725,15 +796,15 @@ body {
 }
 
 .form-message.success {
-    background: #d4edda;
-    color: #155724;
-    border: 1px solid #c3e6cb;
+    background: var(--success-bg);
+    color: var(--success-text);
+    border: 1px solid var(--success-border);
 }
 
 .form-message.error {
-    background: #f8d7da;
-    color: #721c24;
-    border: 1px solid #f5c6cb;
+    background: var(--error-bg);
+    color: var(--error-color);
+    border: 1px solid var(--error-border);
 }
 
 /* Project Tech Tags */
@@ -745,8 +816,8 @@ body {
 }
 
 .project-tech-tag {
-    background: #764ba2;
-    color: white;
+    background: var(--primary-color);
+    color: var(--text-white);
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
     font-size: 0.8rem;
@@ -765,10 +836,10 @@ body {
 }
 
 .experience-content {
-    background: #f8f9fa;
+    background: var(--card-bg);
     padding: 1.5rem;
     border-radius: 12px;
-    border-left: 4px solid #667eea;
+    border: 1px solid var(--border-color);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
@@ -777,32 +848,32 @@ body {
 }
 
 .experience-header h3 {
-    color: #333;
+    color: var(--text-primary);
     font-size: 1.4rem;
     margin-bottom: 0.3rem;
 }
 
 .company-name {
-    color: #667eea;
+    color: var(--primary-color);
     font-weight: 600;
     font-size: 1.1rem;
     margin-bottom: 0.2rem;
 }
 
 .location-date {
-    color: #999;
+    color: var(--text-light);
     font-size: 0.9rem;
     font-style: italic;
 }
 
 .experience-date {
-    color: #667eea;
+    color: var(--primary-color);
     font-weight: 600;
     font-style: normal;
 }
 
 .experience-description p {
-    color: #555;
+    color: var(--text-secondary);
     margin-bottom: 1rem;
     line-height: 1.6;
 }
@@ -817,15 +888,15 @@ body {
     margin-bottom: 0.5rem;
     padding-left: 1.5rem;
     position: relative;
-    color: #666;
+    color: var(--text-muted);
     line-height: 1.5;
 }
 
 .achievements li::before {
-    content: "✓";
+    content: "●";
     position: absolute;
     left: 0;
-    color: #28a745;
+    color: var(--border-color);
     font-weight: bold;
 }
 
@@ -836,8 +907,8 @@ body {
 }
 
 .tech-tag {
-    background: #667eea;
-    color: white;
+    background: var(--primary-color);
+    color: var(--text-white);
     padding: 0.2rem 0.6rem;
     border-radius: 15px;
     font-size: 0.8rem;
