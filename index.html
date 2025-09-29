@@ -3,315 +3,667 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vladislav Visnevschi - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Delius&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Delius&family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <title>Visnevschi Vladislav - Developer Portfolio</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div id="mainPage">   
-        <div id="nameContainer">
-            <h1>Vladislav Visnevschi</h1>
-            <a href="https://www.linkedin.com/in/vladislav-visnevschi-905325259/" id="linkedin"></a>
-        </div>
-        <h1>Personal Portfolio</h1>
-        <br><br>
-        <h2 id="introText">A showcase of my Experience and projects</h2>
-        <a href="#head" id="arrow"></a>
-    </div>
-    <div id="myPage">
-        <div id="head">
-            <a href="#CVTitle" class="navButton">My Work Experience</a>
-            <a href="#projTitle" class="navButton">My Projects</a>
-            <a href="VisnevschiCV (4).pdf" class="navButton">My CV</a>
-            <a href="https://www.linkedin.com/in/vladislav-visnevschi-905325259/" class="navButton">My Linkedin</a>
-        </div>
-        <div class="title" id="CVTitle">
-            <h1>My Work Experience</h1>
-            <h2>Having worked with various teams helped me understand it better.</h2>
-        </div>
-        <div id="CVWrapper">
-            <div class="CV" id="timelineContainer">
-                <div id="timeline"></div>
-            </div>
-            <div class="CV" id="CVContainer">
-                
-                <div id="expContainer">
-                    <div class="timelineMarker">
-                        <label for="">March 2023</label>
-                    </div>
-                    <label class="expTitle">Software Developer at ColorfulCoding</label>
-                    <br>
-                    <label class="durationMobile">March 2023 - January 2025</label>
-                    <br>
-                    <label class="expDescr">Part of a high-performing Unity AR/VR team where I handled core development, tool integration, and 
-                        performance-sensitive systems. I had full access to the architecture, which helped me develop strong debugging 
-                        skills and a scalable mindset. Focused on building immersive, real-time XR experiences with tight delivery 
-                        timelines.</label>
-                    <ul class="expList">
-                        <li>Developed multiple VR/AR simulations (surgery, golf, and a 3D shooter) — focused on real-time interactivity, usability, and low-latency performance</li>
-                        <li>Created a complex State Machine and Behavior Tree system for enemy AI in a 3D shooter</li>
-                        <li>Designed and implemented a voice-interactive AI NPC system with speech-to-text/text-to-speech, improving response speed by 60%</li>
-                        <li>Profiled and optimized Unity applications using Unity Profiler and in-editor tools to maintain smooth frame rates on standalone VR headsets</li>
-                        <li>Collaborated on internal tool integration and workflow automation (TTS APIs, UI systems, character animation triggers)</li>
-                    </ul>
-                    <div class="timelineMarker">
-                        <label for="">January 2025</label>
-                    </div>
-                </div>
-
-                <div id="expContainer">
-                    <div class="timelineMarker">
-                        <label for="">December 2024</label>
-                    </div>
-                    <label class="expTitle">Software Developer at TravelAssistant</label>
-                    <br>
-                    <label class="durationMobile">December 2024 - Present</label>
-                    <br>
-                    <br>
-                    <label class="expDescr">
-                        Leading the development of an AR-powered tourism app for Zurich, combining immersive storytelling with 
-                        interactive technology.
-                    </label>
-                    <ul class="expList">
-                        <li>Created AR Experiences over Zurich Murals</li>
-                        <li>Implemented an interactive map displaying all AR locations and live content</li>
-                        <li>Managed all project data pipelines, from content input to real-time rendering</li>
-                        <li>Designed and built scalable architecture for the entire C# project</li>
-                    </ul>
-                    <div class="timelineMarker">
-                        <label for="">Present</label>
-                    </div>
-                </div>
-
-                <div id="expContainer">
-                    <div class="timelineMarker">
-                        <label for="">October 2022</label>
-                    </div>
-                    <label class="expTitle">Software Developer at OrthrusGames</label>
-                    <br>
-                    <label class="durationMobile">October 2022 - Present</label>
-                    <br>
-                    <br>
-                    <label class="expDescr">
-                        Independently built and released 4 original games (3 mobile, 1 PC) as part of a small teams (2–5 members). Took 
-                        on leadership, project management, and technical development responsibilities throughout the lifecycle of 
-                        each project.
-                    </label>
-                    <ul class="expList">
-                        <li>Led game development and project planning from concept to release</li>
-                        <li>Designed and implemented core gameplay systems and architecture in Unity C#</li>
-                        <li>Managed small cross-functional teams, assigning tasks, setting milestones, and ensuring delivery</li>
-                        <li>Oversaw testing, debugging, and final polish for stable releases</li>
-                        <li>Maintained team motivation and consistent progress while balancing side-project status</li>
-                    </ul>
-                    <div class="timelineMarker">
-                        <label for="">Present</label>
-                    </div>
-                </div>
-
-                <div id="expContainer">
-                    <div class="timelineMarker">
-                        <label for="">October 2022</label>
-                    </div>
-                    <label class="expTitle">Software Developer Intern at Midnight Works</label>
-                    <br>
-                    <label class="durationMobile">October 2022 - March 2023</label>
-                    <br>
-                    <br>
-                    <label class="expDescr">
-                        Worked in a team of 10 junior developers and 3 mid-senior developers. The mid-senior developers were there in 
-                        case anyone was stuck, mostly focused on their projects, and we had one team manager who was monitoring the 
-                        progress.
-                    </label>
-                    <ul class="expList">
-                        <li>Migrated Games from PC/Mobile/Nintendo to PS4 and PS5</li>
-                        <li>Implemented a traffic system for a driving game in C#</li>
-                        <li>Implemented the trophy system for the PlayStation Console</li>
-                        <li>Implemented new game mechanics to deliver a better product</li>
-                        <li>Optimized projects for a 30-60% better frame rate</li>
-                        <li>Developed Unity Windows to automate some of the migration processes</li>
-                        <li>Developed a C# code base to ease and fasten the migrating process</li>
-                        <li>Set up a friendly atmosphere within the team</li>
-                        <li>Quickly overtook the mid-senior developer's responsibility to train newcomers</li>
-                    </ul>
-                    <div class="timelineMarker">
-                        <label for="">March 2023</label>
-                    </div>
-                </div>
-
-
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="nav-brand">Visnevschi Vladislav</div>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
         </div>
-        <div class="title" id="projTitle">
-            <h1>My Projects</h1>
-            <h2>Discovering the limits of my capabilities.</h2>
-        </div>
-        <div id="projWrapper">
+    </nav>
 
-            <div class="projContainer">
-                <label class="projName">Clock VR Experience</label>
-                    <div class="video-container">
-                        <video controls style="height: 450px;">
-                            <source src="VRClock.mp4"  type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>               
-                <div class="projDescrContainer">
-                    <label class="projDescr">
-                        A new way of learning how a clock works, using VR.
-                    </label>  
-                </div>
-                <a  class="moreButton disabled">More</a>
-            </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Visnevschi Vladislav</h1>
+            <p class="hero-subtitle">Passionate about creating innovative solutions and bringing ideas to life through code</p>
             
-
-            <div class="projContainer">
-                <label class="projName">Einstein Dialog</label>
-                    <div class="video-container">
-                        <video controls style="height: 450px;">
-                            <source src="einstein.mp4"  type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>               
-                <div class="projDescrContainer">
-                    <label class="projDescr">
-                        A new way of learning about historical figures. 
-                    </label>  
-                </div>
-                <a  class="moreButton disabled">More</a>
+            <div class="hero-buttons">
+                <a href="#projects" class="hero-btn primary">View My Work</a>
+                <a href="VisnevschiCV (4).pdf" class="hero-btn secondary" download>Download CV</a>
             </div>
-
-
-            <div class="projContainer">
-                <label class="projName">TravelAssistant</label>
-                    <div class="video-container">
-                        <video controls>
-                            <source src="AR Experience over Zurich Grafitty.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>               
-                <div class="projDescrContainer">
-                    <label class="projDescr">
-                        The First Experience Made for TravelAssistant using Unity XR
-                    </label>  
-                </div>
-                <a  class="moreButton disabled">More</a>
-            </div>
-            
-
-            <div class="projContainer">
-                <label class="projName">Geometry War</label>
-                    <div class="image-container">
-                        <img src="GeometryWar.png" alt="GeometryWar Game Image">
-                    </div>
-                <div class="projDescrContainer">
-                    <label class="projDescr">
-                        A Fun game we made, while focusing more on the marketing and implementing what we have learned in the past.
-                    </label>  
-                </div>
-                <a href="https://play.google.com/store/apps/details?id=com.OrthrusGames.GeometryWar" class="moreButton">More</a>
-            </div>
-
-
-            <div class="projContainer">
-                <label class="projName">MoveTheSquare</label>
-                    <div class="image-container">
-                        <img src="MoveTheSquare.png" alt="MoveTheSquare Game Image">
-                    </div>
-                <div class="projDescrContainer">
-                    <label class="projDescr">
-                        Our First Game within OrthrusGames
-                    </label>  
-                </div>
-                <a href="https://play.google.com/store/apps/details?id=com.UnknownGames.MoveTheSquare" class="moreButton">More</a>
-            </div>
-
-            <div class="projContainer">
-                <label class="projName">Count</label>
-                    <div class="image-container">
-                        <img src="Count.png" alt="MoveTheSquare Game Screenshot">
-                    </div>
-                <div class="projDescrContainer">
-                    <label class="projDescr">
-                        A simple puzzle game made in 1 weekend
-                    </label>  
-                </div>
-                <a href="https://play.google.com/store/apps/details?id=com.UnknownGames.Count" class="moreButton">More</a>
-            </div>
-
-            <div class="projContainer">
-                <label class="projName">TopDownShooter</label>
-                    <div class="video-container">
-                        <video controls>
-                            <source src="TopDown.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>               
-                <div class="projDescrContainer">
-                    <label class="projDescr">
-                        A top-down shooter made for a romanian youtuber.
-                        Everything, including animations, npc behaviour and game/level design was hand-made.
-                        the video is cut due to unnecesary scenes for my portfolio.
-                    </label>  
-                </div>
-                <a href="https://unknowngames-public.itch.io/hotline-oradea-betia" class="moreButton">More</a>
-            </div>
-
-            <div class="projContainer">
-                <label class="projName">GolfVR</label>
-                    <div class="video-container">
-                        <video controls>
-                            <source src="golf demo 1.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>               
-                <div class="projDescrContainer">
-                    <label class="projDescr">
-                        A VR golf game made for a Romanian Bank.
-                        In Order to give the user a better feeling of the game, I had to refuze the traditional collisions and use a more complicated self-made system
-                    </label>  
-                </div>
-                <a  class="moreButton disabled">More</a>
-            </div>
-
-            <div class="projContainer">
-                <label class="projName">SurgeryRoom</label>
-                    <div class="video-container">
-                        <video controls>
-                            <source src="surgeryRoom VR.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>               
-                <div class="projDescrContainer">
-                    <label class="projDescr">
-                        A VR Surgery experience, made in 1 week.    
-                    </label>  
-                </div>
-                <a  class="moreButton disabled">More</a>
-            </div>
-
-            <div class="projContainer">
-                <label class="projName">VRCarnival</label>
-                    <div class="video-container">
-                        <video controls>
-                            <source src="VR Carnival.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>               
-                <div class="projDescrContainer">
-                    <label class="projDescr">
-                        A VR game inspired from old web-games.
-                    </label>  
-                </div>
-                <a  class="moreButton disabled">More</a>
-            </div>
-
-
-
         </div>
-        <div id="footer"></div>    
+    </section>
+
+    <!-- Main Content Container -->
+    <div class="main-content">
+        <div class="container">
+            <!-- About Section -->
+            <section id="about" class="section">
+                <div class="section-content">
+                    <h2>About Me</h2>
+                    
+                    <div class="about-grid">
+                        <!-- Professional Profile -->
+                        <div class="about-card profile-card">
+                            <h3>Professional Profile</h3>
+                            <p>Unity developer with over 4 years of experience building immersive AR/VR applications, games, and interactive experiences. I specialize in performance optimization, real-time systems, and cross-platform deployment.</p>
+                            
+                            <h4 style="color: #764ba2; margin: 1rem 0 0.5rem 0;">Key Highlights:</h4>
+                            <ul>
+                                <li>4+ years Unity & C# development experience</li>
+                                <li>Specialized in high-performance VR/AR simulations</li>
+                                <li>Led cross-functional teams of 2-5 people</li>
+                                <li>Experience with PlayStation console development</li>
+                                <li>Strong focus on performance optimization (30-60% improvements)</li>
+                                <li>End-to-end project execution from concept to delivery</li>
+                            </ul>
+                        </div>
+
+                        <!-- Technical Skills -->
+                        <div class="about-card technical-card">
+                            <h3>Technical Skills</h3>
+                            <div class="skills-tags">
+                                <span class="skill-tag">Unity</span>
+                                <span class="skill-tag">C#</span>
+                                <span class="skill-tag">AR/VR/XR</span>
+                                <span class="skill-tag">ARCore</span>
+                                <span class="skill-tag">OpenXR</span>
+                                <span class="skill-tag">ARFoundation</span>
+                                <span class="skill-tag">XRToolkit</span>
+                                <span class="skill-tag">UIToolkit</span>
+                                <span class="skill-tag">Blender</span>
+                                <span class="skill-tag">3D Modeling</span>
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">ChatGPT API</span>
+                                <span class="skill-tag">Eleven Labs</span>
+                                <span class="skill-tag">Convai.ai</span>
+                                <span class="skill-tag">PlayStation Development</span>
+                            </div>
+                        </div>
+
+                        <!-- Languages -->
+                        <div class="about-card languages-card">
+                            <h3>Languages</h3>
+                            <div class="languages-list">
+                                <div class="language-item">
+                                    <span class="language-name">Romanian</span>
+                                    <span class="language-level native">Native</span>
+                                </div>
+                                <div class="language-item">
+                                    <span class="language-name">Russian</span>
+                                    <span class="language-level native">Native</span>
+                                </div>
+                                <div class="language-item">
+                                    <span class="language-name">English</span>
+                                    <span class="language-level fluent">Fluent</span>
+                                </div>
+                                <div class="language-item">
+                                    <span class="language-name">Italian</span>
+                                    <span class="language-level intermediate">Intermediate</span>
+                                </div>
+                                <div class="language-item">
+                                    <span class="language-name">German</span>
+                                    <span class="language-level learning">Intermediate (Learning)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Education -->
+                        <div class="about-card education-card">
+                            <h3>Education</h3>
+                            <div class="education-details">
+                                <h4>Bachelor's Degree in Computer Science</h4>
+                                <div class="university">"Alexandru Ioan Cuza" University</div>
+                                <div class="location-date">Iasi, Romania • 2019-2022</div>
+                            </div>
+                            <h4 style="color: #764ba2; margin: 1rem 0 0.5rem 0;">Academic Projects:</h4>
+                            <ul>
+                                <li>Puzzle board game in C++</li>
+                                <li>Chess game using Python</li>
+                                <li>Java-based Online Checkers game</li>
+                                <li>Website with HTML, CSS, JS, SQL and PHP</li>
+                                <li>Online chat application in Java</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Professional Experience Section -->
+            <section id="experience" class="section">
+                <div class="section-content">
+                    <h2>Professional Experience</h2>
+                    
+                    <div class="experience-timeline">
+                        <!-- Experience Item 1 -->
+                        <div class="experience-item">
+                            <div class="experience-content">
+                                <div class="experience-header">
+                                    <h3>Software Developer</h3>
+                                    <div class="company-name">TravelAssistant</div>
+                                    <div class="location-date">
+                                        <span class="experience-date">December 2024 - Present</span> • 
+                                        <span class="location">Zurich, Switzerland</span>
+                                    </div>
+                                </div>
+                                <div class="experience-description">
+                                    <p>Leading the development of an AR-powered tourism app for Zurich, combining immersive storytelling with interactive technology.</p>
+                                    <ul class="achievements">
+                                        <li>Created AR Experiences over Zurich Murals</li>
+                                        <li>Implemented an interactive map displaying all AR locations and live content</li>
+                                        <li>Managed all project data pipelines, from content input to real-time rendering</li>
+                                        <li>Designed and built scalable architecture for the entire C# project</li>
+                                    </ul>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">Unity</span>
+                                        <span class="tech-tag">C#</span>
+                                        <span class="tech-tag">Blender</span>
+                                        <span class="tech-tag">Git</span>
+                                        <span class="tech-tag">Photoshop</span>
+                                        <span class="tech-tag">Premiere Pro</span>
+                                        <span class="tech-tag">Team Management</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Experience Item 2 -->
+                        <div class="experience-item">
+                            <div class="experience-content">
+                                <div class="experience-header">
+                                    <h3>Software Developer</h3>
+                                    <div class="company-name">ColorfulCoding</div>
+                                    <div class="location-date">
+                                        <span class="experience-date">March 2023 - January 2025</span> • 
+                                        <span class="location">România</span>
+                                    </div>
+                                </div>
+                                <div class="experience-description">
+                                    <p>Part of a high-performing Unity AR/VR team where I handled core development, tool integration, and performance-sensitive systems. I had full access to the architecture, which helped me develop strong debugging skills and a scalable mindset.</p>
+                                    <ul class="achievements">
+                                        <li>Developed multiple VR/AR simulations (surgery, golf, and a 3D shooter) — focused on real-time interactivity, usability, and low-latency performance</li>
+                                        <li>Created a complex State Machine and Behavior Tree system for enemy AI in a 3D shooter</li>
+                                        <li>Designed and implemented a voice-interactive AI NPC system with speech-to-text/text-to-speech, improving response speed by 60%</li>
+                                        <li>Profiled and optimized Unity applications using Unity Profiler and in-editor tools to maintain smooth frame rates on standalone VR headsets</li>
+                                        <li>Collaborated on internal tool integration and workflow automation (TTS APIs, UI systems, character animation triggers)</li>
+                                    </ul>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">Unity</span>
+                                        <span class="tech-tag">C#</span>
+                                        <span class="tech-tag">Blender</span>
+                                        <span class="tech-tag">ARFoundation</span>
+                                        <span class="tech-tag">XRToolkit</span>
+                                        <span class="tech-tag">ChatGPT API</span>
+                                        <span class="tech-tag">Eleven Labs</span>
+                                        <span class="tech-tag">Convai.ai</span>
+                                        <span class="tech-tag">UIToolkit</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Experience Item 3 -->
+                        <div class="experience-item">
+                            <div class="experience-content">
+                                <div class="experience-header">
+                                    <h3>Software Developer</h3>
+                                    <div class="company-name">OrthrusGames</div>
+                                    <div class="location-date">
+                                        <span class="experience-date">October 2022 - Present</span> • 
+                                        <span class="location">Remote</span>
+                                    </div>
+                                </div>
+                                <div class="experience-description">
+                                    <p>Independently built and released 4 original games (3 mobile, 1 PC) as part of small teams (2–5 members). Took on leadership, project management, and technical development responsibilities throughout the lifecycle of each project.</p>
+                                    <ul class="achievements">
+                                        <li>Led game development and project planning from concept to release</li>
+                                        <li>Designed and implemented core gameplay systems and architecture in Unity C#</li>
+                                        <li>Managed small cross-functional teams, assigning tasks, setting milestones, and ensuring delivery</li>
+                                        <li>Oversaw testing, debugging, and final polish for stable releases</li>
+                                        <li>Maintained team motivation and consistent progress while balancing side-project status</li>
+                                    </ul>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">Unity</span>
+                                        <span class="tech-tag">C#</span>
+                                        <span class="tech-tag">Blender</span>
+                                        <span class="tech-tag">Git</span>
+                                        <span class="tech-tag">Photoshop</span>
+                                        <span class="tech-tag">Team Management</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Experience Item 4 -->
+                        <div class="experience-item">
+                            <div class="experience-content">
+                                <div class="experience-header">
+                                    <h3>Software Developer Intern</h3>
+                                    <div class="company-name">Midnight Works</div>
+                                    <div class="location-date">
+                                        <span class="experience-date">October 2022 - March 2023</span> • 
+                                        <span class="location">Moldova</span>
+                                    </div>
+                                </div>
+                                <div class="experience-description">
+                                    <p>Worked in a team of 10 junior developers and 3 mid-senior developers. Focused on game migration and optimization projects with mentoring responsibilities.</p>
+                                    <ul class="achievements">
+                                        <li>Migrated Games from PC/Mobile/Nintendo to PS4 and PS5</li>
+                                        <li>Implemented a traffic system for a driving game in C#</li>
+                                        <li>Implemented the trophy system for the PlayStation Console</li>
+                                        <li>Optimized projects for a 30-60% better frame rate</li>
+                                        <li>Developed Unity Windows to automate some of the migration processes</li>
+                                        <li>Quickly overtook the mid-senior developer's responsibility to train newcomers</li>
+                                    </ul>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">Unity</span>
+                                        <span class="tech-tag">C#</span>
+                                        <span class="tech-tag">Blender</span>
+                                        <span class="tech-tag">PlayStation</span>
+                                        <span class="tech-tag">Git</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section">
+                <div class="section-content">
+                    <h2>Featured Projects</h2>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <h3>AR Zurich Graffiti Experience</h3>
+                            <p class="project-description">An augmented reality application that overlays interactive digital content on Zurich's urban graffiti art.</p>
+                            
+                            <video class="project-video" controls>
+                                <source src="AR Experience over Zurich Grafitty.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            
+                            <div class="project-tech-tags">
+                                <span class="project-tech-tag">Unity</span>
+                                <span class="project-tech-tag">C#</span>
+                                <span class="project-tech-tag">AR</span>
+                                <span class="project-tech-tag">End-to-end</span>
+                            </div>
+                            
+                            <div class="project-contribution">
+                                <h4>My Contribution:</h4>
+                                <p>Developed the AR tracking system using ARCore, implemented real-time image recognition for graffiti detection, and optimized rendering performance for mobile devices. Created custom shaders for seamless digital overlay integration.</p>
+                            </div>
+                            
+                            <div class="project-buttons">
+                                <button class="store-btn playstore disabled" disabled>
+                                    <img src="playstore.png" alt="Play Store" width="20" height="20">
+                                    Play Store
+                                </button>
+                                <button class="store-btn appstore disabled" disabled>
+                                    <img src="appstore.png" alt="App Store" width="20" height="20">
+                                    App Store
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <h3>VR Carnival</h3>
+                            <p class="project-description">Immersive virtual reality carnival experience</p>
+                            
+                            <video class="project-video" controls>
+                                <source src="VR Carnival.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            
+                            <div class="project-tech-tags">
+                                <span class="project-tech-tag">Unity</span>
+                                <span class="project-tech-tag">C#</span>
+                                <span class="project-tech-tag">VR</span>
+                                <span class="project-tech-tag">End-to-end</span>
+                            </div>
+                            
+                            <div class="project-contribution">
+                                <h4>My Contribution:</h4>
+                                <p>Led the development team in creating the VR interaction systems, physics-based carnival game.</p>
+                            </div>
+                            
+                            <div class="project-buttons">
+                                <button class="store-btn playstore disabled" disabled>
+                                    <img src="playstore.png" alt="Play Store" width="20" height="20">
+                                    Play Store
+                                </button>
+                                <button class="store-btn appstore disabled" disabled>
+                                    <img src="appstore.png" alt="App Store" width="20" height="20">
+                                    App Store
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <h3>Surgery Room VR</h3>
+                            <p class="project-description">Educational VR simulation designed for medical training.</p>
+                            
+                            <video class="project-video" controls>
+                                <source src="surgeryRoom VR.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            
+                            <div class="project-tech-tags">
+                                <span class="project-tech-tag">Unity</span>
+                                <span class="project-tech-tag">C#</span>
+                                <span class="project-tech-tag">VR</span>
+                                <span class="project-tech-tag">End-to-end</span>
+                            </div>
+                            
+                            <div class="project-contribution">
+                                <h4>My Contribution:</h4>
+                                <p>Developed realistic surgical tool interactions using haptic feedback. Designed full surgical workflows.</p>
+                            </div>
+                            
+                            <div class="project-buttons">
+                                <button class="store-btn playstore disabled" disabled>
+                                    <img src="playstore.png" alt="Play Store" width="20" height="20">
+                                    Play Store
+                                </button>
+                                <button class="store-btn appstore disabled" disabled>
+                                    <img src="appstore.png" alt="App Store" width="20" height="20">
+                                    App Store
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <h3>Geometry War</h3>
+                            <p class="project-description">Fast-paced geometric 2D game featuring dynamic particle effects, procedural enemy spawning, and intense arcade-style gameplay with progressive difficulty scaling.</p>
+                            
+                            <img src="GeometryWar.png" alt="Geometry War" class="project-image">
+                            
+                            <div class="project-tech-tags">
+                                <span class="project-tech-tag">Unity</span>
+                                <span class="project-tech-tag">C#</span>
+                                <span class="project-tech-tag">2D</span>
+                                <span class="project-tech-tag">End-to-end</span>
+                            </div>
+                            
+                            <div class="project-contribution">
+                                <h4>My Contribution:</h4>
+                                <p>Developed the entire game including enemy patterns, particle system optimization, scoring mechanics, and mobile touch controls.</p>
+                            </div>
+                            
+                            <div class="project-buttons">
+                                <a href="https://play.google.com/store/apps/details?id=com.OrthrusGames.GeometryWar" class="store-btn playstore" target="_blank">
+                                    <img src="playstore.png" alt="Play Store" width="20" height="20">
+                                    Play Store
+                                </a>
+                                <a href="https://apps.apple.com/za/app/geometry-war/id6745021765" class="store-btn appstore" target="_blank">
+                                    <img src="appstore.png" alt="App Store" width="20" height="20">
+                                    App Store
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <h3>VR Clock</h3>
+                            <p class="project-description">Interactive virtual reality experience, explaining how a mechanical clock works.</p>
+                            
+                            <video class="project-video" controls>
+                                <source src="VRClock.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            
+                            <div class="project-tech-tags">
+                                <span class="project-tech-tag">Unity</span>
+                                <span class="project-tech-tag">C#</span>
+                                <span class="project-tech-tag">VR</span>
+                                <span class="project-tech-tag">End-to-end</span>
+                            </div>
+                            
+                            <div class="project-contribution">
+                                <h4>My Contribution:</h4>
+                                <p>Designed and implemented the 3D experience. Optimised the performance for VR rendering and interaction.</p>
+                            </div>
+                            
+                            <div class="project-buttons">
+                                <button class="store-btn playstore disabled" disabled>
+                                    <img src="playstore.png" alt="Play Store" width="20" height="20">
+                                    Play Store
+                                </button>
+                                <button class="store-btn appstore disabled" disabled>
+                                    <img src="appstore.png" alt="App Store" width="20" height="20">
+                                    App Store
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <h3>Move The Square</h3>
+                            <p class="project-description">Minimalist arcade, fast-paced game focused on strategic movement and reaction-time, featuring clean design and progressive difficulty.</p>
+                            
+                            <img src="MoveTheSquare.png" alt="Move The Square" class="project-image">
+                            
+                            <div class="project-tech-tags">
+                                <span class="project-tech-tag">Unity</span>
+                                <span class="project-tech-tag">C#</span>
+                                <span class="project-tech-tag">2D</span>
+                                <span class="project-tech-tag">End-to-end</span>
+                            </div>
+                            
+                            <div class="project-contribution">
+                                <h4>My Contribution:</h4>
+                                <p>Developed the entire game including enemy patterns, particle system optimization, scoring mechanics, and mobile touch controls.</p>
+                            </div>
+                            
+                            <div class="project-buttons">
+                                <a href="https://play.google.com/store/apps/details?id=com.UnknownGames.MoveTheSquare" class="store-btn playstore" target="_blank">
+                                    <img src="playstore.png" alt="Play Store" width="20" height="20">
+                                    Play Store
+                                </a>
+                                <a href="https://apps.apple.com/za/app/movethesquare/id6451136590" class="store-btn appstore" target="_blank">
+                                    <img src="appstore.png" alt="App Store" width="20" height="20">
+                                    App Store
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <h3>numPath</h3>
+                            <p class="project-description">2D puzzle game about completing a matrix with numbers, featuring logical number placement challenges and progressive difficulty levels.</p>
+                            
+                            <img src="numpath.png" alt="numPath" class="project-image">
+                            
+                            <div class="project-tech-tags">
+                                <span class="project-tech-tag">Unity</span>
+                                <span class="project-tech-tag">C#</span>
+                                <span class="project-tech-tag">2D</span>
+                                <span class="project-tech-tag">End-to-end</span>
+                            </div>
+                            
+                            <div class="project-contribution">
+                                <h4>My Contribution:</h4>
+                                <p>Developed the complete puzzle logic system including matrix validation algorithms, number placement mechanics, and hint systems. Created level generation tools and implemented smooth animations for satisfying puzzle interactions.</p>
+                            </div>
+                            
+                            <div class="project-buttons">
+                                <a href="https://play.google.com/store/apps/details?id=com.UnknownGames.Count" class="store-btn playstore" target="_blank">
+                                    <img src="playstore.png" alt="Play Store" width="20" height="20">
+                                    Play Store
+                                </a>
+                                <a href="https://apps.apple.com/za/app/numpath/id6739246766" class="store-btn appstore" target="_blank">
+                                    <img src="appstore.png" alt="App Store" width="20" height="20">
+                                    App Store
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <h3>Golf Demo</h3>
+                            <p class="project-description">Realistic golf simulation showcasing advanced physics-based gameplay mechanics.</p>  
+                            <video class="project-video" controls>
+                                <source src="golf demo 1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            
+                            <div class="project-tech-tags">
+                                <span class="project-tech-tag">Unity</span>
+                                <span class="project-tech-tag">C#</span>
+                                <span class="project-tech-tag">VR</span>
+                                <span class="project-tech-tag">End-to-end</span>
+                            </div>
+                            
+                            <div class="project-contribution">
+                                <h4>My Contribution:</h4>
+                                <p>Rewrote the Unity physics collision system to improve accuracy and performance as well as to allow fast swings. Created different ball behaviours on different types of surfaces.</p>
+                            </div>
+                            
+                            <div class="project-buttons">
+                                <button class="store-btn playstore disabled" disabled>
+                                    <img src="playstore.png" alt="Play Store" width="20" height="20">
+                                    Play Store
+                                </button>
+                                <button class="store-btn appstore disabled" disabled>
+                                    <img src="appstore.png" alt="App Store" width="20" height="20">
+                                    App Store
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <h3>MultiPlayer 3D Shooter</h3>
+                            <p class="project-description">Action-packed 3D shooter with local multiplayer support, featuring fast-paced combat, multiple weapon types, and split-screen gameplay for competitive matches.</p>
+                            
+                            <video class="project-video" controls>
+                                <source src="3D Shooter.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            
+                            <div class="project-tech-tags">
+                                <span class="project-tech-tag">Unity</span>
+                                <span class="project-tech-tag">C#</span>
+                                <span class="project-tech-tag">3D</span>
+                                <span class="project-tech-tag">Local Multiplayer</span>
+                            </div>
+                            
+                            <div class="project-contribution">
+                                <h4>My Contribution:</h4>
+                                <p>Developed the complete multiplayer framework including split-screen rendering, weapon systems, player controllers, and AI enemies. Implemented local network architecture for seamless multiplayer gameplay and optimized performance for multiple viewports.</p>
+                            </div>
+                            
+                            <div class="project-buttons">
+                                <button class="store-btn playstore disabled" disabled>
+                                    <img src="playstore.png" alt="Play Store" width="20" height="20">
+                                    Play Store
+                                </button>
+                                <button class="store-btn appstore disabled" disabled>
+                                    <img src="appstore.png" alt="App Store" width="20" height="20">
+                                    App Store
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <h3>Top-Down Shooter</h3>
+                            <p class="project-description">Classic top-down shooter game.</p>
+                            
+                            <video class="project-video" controls>
+                                <source src="TopDown.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            
+                            <div class="project-tech-tags">
+                                <span class="project-tech-tag">Unity</span>
+                                <span class="project-tech-tag">C#</span>
+                                <span class="project-tech-tag">3D</span>
+                                <span class="project-tech-tag">End-to-end</span>
+                            </div>
+                            
+                            <div class="project-contribution">
+                                <h4>My Contribution:</h4>
+                                <p>Developed the complete game systems including character controller, VFX, SFX. Created modular level design tools and implemented save/load functionality with data persistence. Designed enemy AI and implemented various gameplay mechanics.</p>
+                            </div>
+                            
+                            <div class="project-buttons">
+                                <button class="store-btn playstore disabled" disabled>
+                                    <img src="playstore.png" alt="Play Store" width="20" height="20">
+                                    Play Store
+                                </button>
+                                <button class="store-btn appstore disabled" disabled>
+                                    <img src="appstore.png" alt="App Store" width="20" height="20">
+                                    App Store
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section">
+                <div class="section-content">
+                    <h2>Get In Touch</h2>
+                    <p>Interested in collaborating or learning more about my work? Feel free to reach out!</p>
+                    
+                    <div class="contact-container">
+                        <!-- Contact Form -->
+                        <div class="contact-form-section">
+                            <h3>Send a Message</h3>
+                            <form class="message-form" id="contactForm">
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                                </div>
+                                <button type="submit" class="send-btn">Send Message</button>
+                            </form>
+                        </div>
+                        
+                        <!-- Contact Info -->
+                        <div class="contact-info-section">
+                            <h3>Contact Information</h3>
+                            <div class="contact-links">
+                                <a href="https://linkedin.com/in/your-profile" class="contact-link" target="_blank">
+                                    <div class="contact-icon">💼</div>
+                                    <div class="contact-details">
+                                        <span class="contact-label">LinkedIn</span>
+                                        <span class="contact-value">Connect with me</span>
+                                    </div>
+                                </a>
+                                
+                                <a href="mailto:visnevskivlad@gmail.com" class="contact-link">
+                                    <div class="contact-icon">📧</div>
+                                    <div class="contact-details">
+                                        <span class="contact-label">Email</span>
+                                        <span class="contact-value">visnevskivlad@gmail.com</span>
+                                    </div>
+                                </a>
+                                
+                                <a href="tel:+41762219794" class="contact-link">
+                                    <div class="contact-icon">📱</div>
+                                    <div class="contact-details">
+                                        <span class="contact-label">Phone</span>
+                                        <span class="contact-value">+41 76 221 97 94</span>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="download-section">
+                                <a href="VisnevschiCV (4).pdf" class="download-cv" download>
+                                    📄 Download CV
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
