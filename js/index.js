@@ -1,6 +1,7 @@
 // Smooth scrolling for navigation links
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-link');
+    const heroButtons = document.querySelectorAll('.hero-btn[href^="#"]');
     const topNav = document.querySelector('.top-nav');
     
     // Navigation scroll effect
@@ -12,8 +13,24 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
+    // Handle nav links
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+                targetSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Handle hero buttons
+    heroButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             const targetSection = document.querySelector(targetId);
