@@ -3,315 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vladislav Visnevschi - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Delius&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Delius&family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <title>Visnevschi Vladislav - Developer Portfolio</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div id="mainPage">   
-        <div id="nameContainer">
-            <h1>Vladislav Visnevschi</h1>
-            <a href="https://www.linkedin.com/in/vladislav-visnevschi-905325259/" id="linkedin"></a>
-        </div>
-        <h1>Personal Portfolio</h1>
-        <br><br>
-        <h2 id="introText">A showcase of my Experience and projects</h2>
-        <a href="#head" id="arrow"></a>
-    </div>
-    <div id="myPage">
-        <div id="head">
-            <a href="#CVTitle" class="navButton">My Work Experience</a>
-            <a href="#projTitle" class="navButton">My Projects</a>
-            <a href="VisnevschiCV (4).pdf" class="navButton">My CV</a>
-            <a href="https://www.linkedin.com/in/vladislav-visnevschi-905325259/" class="navButton">My Linkedin</a>
-        </div>
-        <div class="title" id="CVTitle">
-            <h1>My Work Experience</h1>
-            <h2>Having worked with various teams helped me understand it better.</h2>
-        </div>
-        <div id="CVWrapper">
-            <div class="CV" id="timelineContainer">
-                <div id="timeline"></div>
-            </div>
-            <div class="CV" id="CVContainer">
-                
-                <div id="expContainer">
-                    <div class="timelineMarker">
-                        <label for="">March 2023</label>
-                    </div>
-                    <label class="expTitle">Software Developer at ColorfulCoding</label>
-                    <br>
-                    <label class="durationMobile">March 2023 - January 2025</label>
-                    <br>
-                    <label class="expDescr">Part of a high-performing Unity AR/VR team where I handled core development, tool integration, and 
-                        performance-sensitive systems. I had full access to the architecture, which helped me develop strong debugging 
-                        skills and a scalable mindset. Focused on building immersive, real-time XR experiences with tight delivery 
-                        timelines.</label>
-                    <ul class="expList">
-                        <li>Developed multiple VR/AR simulations (surgery, golf, and a 3D shooter) — focused on real-time interactivity, usability, and low-latency performance</li>
-                        <li>Created a complex State Machine and Behavior Tree system for enemy AI in a 3D shooter</li>
-                        <li>Designed and implemented a voice-interactive AI NPC system with speech-to-text/text-to-speech, improving response speed by 60%</li>
-                        <li>Profiled and optimized Unity applications using Unity Profiler and in-editor tools to maintain smooth frame rates on standalone VR headsets</li>
-                        <li>Collaborated on internal tool integration and workflow automation (TTS APIs, UI systems, character animation triggers)</li>
-                    </ul>
-                    <div class="timelineMarker">
-                        <label for="">January 2025</label>
-                    </div>
-                </div>
-
-                <div id="expContainer">
-                    <div class="timelineMarker">
-                        <label for="">December 2024</label>
-                    </div>
-                    <label class="expTitle">Software Developer at TravelAssistant</label>
-                    <br>
-                    <label class="durationMobile">December 2024 - Present</label>
-                    <br>
-                    <br>
-                    <label class="expDescr">
-                        Leading the development of an AR-powered tourism app for Zurich, combining immersive storytelling with 
-                        interactive technology.
-                    </label>
-                    <ul class="expList">
-                        <li>Created AR Experiences over Zurich Murals</li>
-                        <li>Implemented an interactive map displaying all AR locations and live content</li>
-                        <li>Managed all project data pipelines, from content input to real-time rendering</li>
-                        <li>Designed and built scalable architecture for the entire C# project</li>
-                    </ul>
-                    <div class="timelineMarker">
-                        <label for="">Present</label>
-                    </div>
-                </div>
-
-                <div id="expContainer">
-                    <div class="timelineMarker">
-                        <label for="">October 2022</label>
-                    </div>
-                    <label class="expTitle">Software Developer at OrthrusGames</label>
-                    <br>
-                    <label class="durationMobile">October 2022 - Present</label>
-                    <br>
-                    <br>
-                    <label class="expDescr">
-                        Independently built and released 4 original games (3 mobile, 1 PC) as part of a small teams (2–5 members). Took 
-                        on leadership, project management, and technical development responsibilities throughout the lifecycle of 
-                        each project.
-                    </label>
-                    <ul class="expList">
-                        <li>Led game development and project planning from concept to release</li>
-                        <li>Designed and implemented core gameplay systems and architecture in Unity C#</li>
-                        <li>Managed small cross-functional teams, assigning tasks, setting milestones, and ensuring delivery</li>
-                        <li>Oversaw testing, debugging, and final polish for stable releases</li>
-                        <li>Maintained team motivation and consistent progress while balancing side-project status</li>
-                    </ul>
-                    <div class="timelineMarker">
-                        <label for="">Present</label>
-                    </div>
-                </div>
-
-                <div id="expContainer">
-                    <div class="timelineMarker">
-                        <label for="">October 2022</label>
-                    </div>
-                    <label class="expTitle">Software Developer Intern at Midnight Works</label>
-                    <br>
-                    <label class="durationMobile">October 2022 - March 2023</label>
-                    <br>
-                    <br>
-                    <label class="expDescr">
-                        Worked in a team of 10 junior developers and 3 mid-senior developers. The mid-senior developers were there in 
-                        case anyone was stuck, mostly focused on their projects, and we had one team manager who was monitoring the 
-                        progress.
-                    </label>
-                    <ul class="expList">
-                        <li>Migrated Games from PC/Mobile/Nintendo to PS4 and PS5</li>
-                        <li>Implemented a traffic system for a driving game in C#</li>
-                        <li>Implemented the trophy system for the PlayStation Console</li>
-                        <li>Implemented new game mechanics to deliver a better product</li>
-                        <li>Optimized projects for a 30-60% better frame rate</li>
-                        <li>Developed Unity Windows to automate some of the migration processes</li>
-                        <li>Developed a C# code base to ease and fasten the migrating process</li>
-                        <li>Set up a friendly atmosphere within the team</li>
-                        <li>Quickly overtook the mid-senior developer's responsibility to train newcomers</li>
-                    </ul>
-                    <div class="timelineMarker">
-                        <label for="">March 2023</label>
-                    </div>
-                </div>
-
-
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="nav-brand">Visnevschi Vladislav</div>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
         </div>
-        <div class="title" id="projTitle">
-            <h1>My Projects</h1>
-            <h2>Discovering the limits of my capabilities.</h2>
-        </div>
-        <div id="projWrapper">
+    </nav>
 
-            <div class="projContainer">
-                <label class="projName">Clock VR Experience</label>
-                    <div class="video-container">
-                        <video controls style="height: 450px;">
-                            <source src="VRClock.mp4"  type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>               
-                <div class="projDescrContainer">
-                    <label class="projDescr">
-                        A new way of learning how a clock works, using VR.
-                    </label>  
-                </div>
-                <a  class="moreButton disabled">More</a>
-            </div>
+    <div class="container">
+        <!-- About Section -->
+        <section id="about" class="section">
+            <header class="section-header">
+                <h1>Orthrus Games</h1>
+                <p class="subtitle">Game Developer & VR/AR Specialist</p>
+            </header>
             
-
-            <div class="projContainer">
-                <label class="projName">Einstein Dialog</label>
-                    <div class="video-container">
-                        <video controls style="height: 450px;">
-                            <source src="einstein.mp4"  type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>               
-                <div class="projDescrContainer">
-                    <label class="projDescr">
-                        A new way of learning about historical figures. 
-                    </label>  
-                </div>
-                <a  class="moreButton disabled">More</a>
+            <div class="section-content">
+                <h2>About Me</h2>
+                <p>Welcome to my portfolio! I'm a passionate game developer specializing in VR/AR experiences and interactive applications. With expertise in Unity, game design, and immersive technologies, I create engaging digital experiences that push the boundaries of interactive entertainment.</p>
+                
+                <h3>Skills & Technologies</h3>
+                <ul>
+                    <li>Unity 3D Game Development</li>
+                    <li>Virtual Reality (VR) Development</li>
+                    <li>Augmented Reality (AR) Applications</li>
+                    <li>C# Programming</li>
+                    <li>Game Design & Mechanics</li>
+                    <li>3D Modeling & Animation</li>
+                </ul>
             </div>
+        </section>
 
-
-            <div class="projContainer">
-                <label class="projName">TravelAssistant</label>
-                    <div class="video-container">
-                        <video controls>
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-content">
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <video class="project-video" controls>
                             <source src="AR Experience over Zurich Grafitty.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-                    </div>               
-                <div class="projDescrContainer">
-                    <label class="projDescr">
-                        The First Experience Made for TravelAssistant using Unity XR
-                    </label>  
-                </div>
-                <a  class="moreButton disabled">More</a>
-            </div>
-            
-
-            <div class="projContainer">
-                <label class="projName">Geometry War</label>
-                    <div class="image-container">
-                        <img src="GeometryWar.png" alt="GeometryWar Game Image">
+                        <h3>AR Zurich Graffiti Experience</h3>
+                        <p>An augmented reality experience overlaying digital content on Zurich's urban landscape.</p>
                     </div>
-                <div class="projDescrContainer">
-                    <label class="projDescr">
-                        A Fun game we made, while focusing more on the marketing and implementing what we have learned in the past.
-                    </label>  
-                </div>
-                <a href="https://play.google.com/store/apps/details?id=com.OrthrusGames.GeometryWar" class="moreButton">More</a>
-            </div>
 
-
-            <div class="projContainer">
-                <label class="projName">MoveTheSquare</label>
-                    <div class="image-container">
-                        <img src="MoveTheSquare.png" alt="MoveTheSquare Game Image">
-                    </div>
-                <div class="projDescrContainer">
-                    <label class="projDescr">
-                        Our First Game within OrthrusGames
-                    </label>  
-                </div>
-                <a href="https://play.google.com/store/apps/details?id=com.UnknownGames.MoveTheSquare" class="moreButton">More</a>
-            </div>
-
-            <div class="projContainer">
-                <label class="projName">Count</label>
-                    <div class="image-container">
-                        <img src="Count.png" alt="MoveTheSquare Game Screenshot">
-                    </div>
-                <div class="projDescrContainer">
-                    <label class="projDescr">
-                        A simple puzzle game made in 1 weekend
-                    </label>  
-                </div>
-                <a href="https://play.google.com/store/apps/details?id=com.UnknownGames.Count" class="moreButton">More</a>
-            </div>
-
-            <div class="projContainer">
-                <label class="projName">TopDownShooter</label>
-                    <div class="video-container">
-                        <video controls>
-                            <source src="TopDown.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>               
-                <div class="projDescrContainer">
-                    <label class="projDescr">
-                        A top-down shooter made for a romanian youtuber.
-                        Everything, including animations, npc behaviour and game/level design was hand-made.
-                        the video is cut due to unnecesary scenes for my portfolio.
-                    </label>  
-                </div>
-                <a href="https://unknowngames-public.itch.io/hotline-oradea-betia" class="moreButton">More</a>
-            </div>
-
-            <div class="projContainer">
-                <label class="projName">GolfVR</label>
-                    <div class="video-container">
-                        <video controls>
-                            <source src="golf demo 1.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>               
-                <div class="projDescrContainer">
-                    <label class="projDescr">
-                        A VR golf game made for a Romanian Bank.
-                        In Order to give the user a better feeling of the game, I had to refuze the traditional collisions and use a more complicated self-made system
-                    </label>  
-                </div>
-                <a  class="moreButton disabled">More</a>
-            </div>
-
-            <div class="projContainer">
-                <label class="projName">SurgeryRoom</label>
-                    <div class="video-container">
-                        <video controls>
-                            <source src="surgeryRoom VR.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>               
-                <div class="projDescrContainer">
-                    <label class="projDescr">
-                        A VR Surgery experience, made in 1 week.    
-                    </label>  
-                </div>
-                <a  class="moreButton disabled">More</a>
-            </div>
-
-            <div class="projContainer">
-                <label class="projName">VRCarnival</label>
-                    <div class="video-container">
-                        <video controls>
+                    <div class="project-card">
+                        <video class="project-video" controls>
                             <source src="VR Carnival.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-                    </div>               
-                <div class="projDescrContainer">
-                    <label class="projDescr">
-                        A VR game inspired from old web-games.
-                    </label>  
+                        <h3>VR Carnival</h3>
+                        <p>Immersive virtual reality carnival experience with interactive games and attractions.</p>
+                    </div>
+
+                    <div class="project-card">
+                        <video class="project-video" controls>
+                            <source src="surgeryRoom VR.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3>Surgery Room VR</h3>
+                        <p>Educational VR simulation for medical training and surgical procedures.</p>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="GeometryWar.png" alt="Geometry War" class="project-image">
+                        <h3>Geometry War</h3>
+                        <p>Fast-paced geometric shooter game with dynamic particle effects and intense gameplay.</p>
+                    </div>
+
+                    <div class="project-card">
+                        <video class="project-video" controls>
+                            <source src="VRClock.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3>VR Clock</h3>
+                        <p>Interactive virtual reality clock application with immersive time visualization.</p>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="MoveTheSquare.png" alt="Move The Square" class="project-image">
+                        <h3>Move The Square</h3>
+                        <p>Minimalist puzzle game focused on strategic movement and problem-solving.</p>
+                    </div>
+
+                    <div class="project-card">
+                        <video class="project-video" controls>
+                            <source src="golf demo 1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3>Golf Demo</h3>
+                        <p>Realistic golf simulation with physics-based gameplay mechanics.</p>
+                    </div>
+
+                    <div class="project-card">
+                        <video class="project-video" controls>
+                            <source src="TopDown.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3>Top-Down Adventure</h3>
+                        <p>Classic top-down perspective adventure game with exploration elements.</p>
+                    </div>
                 </div>
-                <a  class="moreButton disabled">More</a>
             </div>
+        </section>
 
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-content">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Interested in collaborating or learning more about my work? Feel free to reach out!</p>
+                    
+                    <div class="social-links">
+                        <a href="https://linkedin.com" class="social-link" target="_blank">
+                            <img src="linkedin.svg" alt="LinkedIn" width="24" height="24">
+                            LinkedIn
+                        </a>
+                    </div>
 
-
-        </div>
-        <div id="footer"></div>    
+                    <a href="VisnevschiCV (4).pdf" class="download-cv" download>
+                        Download CV
+                    </a>
+                </div>
+            </div>
+        </section>
     </div>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
