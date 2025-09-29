@@ -1,13 +1,13 @@
 /* Color Variables */
 :root {
     /* Primary Colors */
-    --primary-color: #667eea;
-    --secondary-color: #764ba2;
-    --border-color: #667eea;
+    --primary-color: #73baa7;
+    --secondary-color: #77adba;
+    --border-color: #68888d;
     
     /* Background Colors */
-    --hero-gradient-start: #667eea;
-    --hero-gradient-end: #764ba2;
+    --hero-gradient-start: #73baa7;
+    --hero-gradient-end: #77adba;
     --main-bg-start: #f8f9fa;
     --main-bg-end: #e9ecef;
     --section-bg: #ffffff;
@@ -15,44 +15,44 @@
     --contribution-bg: #ffffff;
     
     /* Text Colors */
-    --text-primary: #333;
-    --text-secondary: #555;
-    --text-muted: #666;
-    --text-light: #999;
+    --text-primary: #2c3e50;
+    --text-secondary: #4a5568;
+    --text-muted: #718096;
+    --text-light: #a0aec0;
     --text-white: #ffffff;
     
     /* Border Colors */
     --border-light: rgba(0, 0, 0, 0.05);
-    --border-primary: rgba(102, 126, 234, 0.2);
-    --border-primary-light: rgba(102, 126, 234, 0.1);
-    --border-primary-medium: rgba(102, 126, 234, 0.3);
-    --border-form: #e9ecef;
+    --border-primary: rgba(115, 186, 167, 0.2);
+    --border-primary-light: rgba(115, 186, 167, 0.1);
+    --border-primary-medium: rgba(115, 186, 167, 0.3);
+    --border-form: #e2e8f0;
     
-    /* Status Colors */
-    --success-color: #28a745;
-    --info-color: #17a2b8;
-    --warning-color: #ffc107;
-    --warning-text: #333;
-    --error-color: #721c24;
-    --error-bg: #f8d7da;
-    --error-border: #f5c6cb;
-    --success-bg: #d4edda;
-    --success-text: #155724;
-    --success-border: #c3e6cb;
+    /* Status Colors - All using primary color range */
+    --success-color: #73baa7;
+    --info-color: #77adba;
+    --warning-color: #68888d;
+    --warning-text: #2d3748;
+    --error-color: #68888d;
+    --error-bg: rgba(115, 186, 167, 0.1);
+    --error-border: rgba(115, 186, 167, 0.3);
+    --success-bg: rgba(115, 186, 167, 0.1);
+    --success-text: #2c3e50;
+    --success-border: rgba(115, 186, 167, 0.3);
     
-    /* Store Button Colors */
-    --playstore-color: #01875f;
-    --playstore-hover: #006844;
-    --appstore-color: #007aff;
-    --appstore-hover: #0056cc;
-    --disabled-bg: #e9ecef;
-    --disabled-text: #6c757d;
+    /* Store Button Colors - Using primary color range */
+    --playstore-color: #73baa7;
+    --playstore-hover: #68888d;
+    --appstore-color: #77adba;
+    --appstore-hover: #68888d;
+    --disabled-bg: #e2e8f0;
+    --disabled-text: #718096;
     
-    /* Language Level Colors */
-    --native-level: #28a745;
-    --fluent-level: #17a2b8;
-    --intermediate-level: #ffc107;
-    --learning-level: #764ba2;
+    /* Language Level Colors - All using primary color variations */
+    --native-level: #73baa7;
+    --fluent-level: #77adba;
+    --intermediate-level: #68888d;
+    --learning-level: #77adba;
     
     /* Shadow Colors */
     --shadow-light: rgba(0, 0, 0, 0.08);
